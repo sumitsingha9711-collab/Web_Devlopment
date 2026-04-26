@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css overflow</title>
+    <style>
+        .box{
+            height: 30px;
+            width: 300px;
+            border: 2px solid black;
+            overflow: scroll;
+            padding: 30px;
+            /* white-space: nowrap; this will make the text in a single line */
+            /* overflow-x: hidden; these two properties can be used instead of overflow: auto; */
+            overflow-y: scroll; 
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        hello this is overflow property example and i am using overflow property to show how it works when the content exceeds the size of the container. let's add more text to make sure it overflows the container. adding even more text to see the effect of overflow property in action. this should be enough text to demonstrate the overflow behavior.lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.wklem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.kmcwlorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.
+    </div>
+</body>
+</html>

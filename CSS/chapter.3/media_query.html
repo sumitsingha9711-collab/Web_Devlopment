@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css media query</title>
+    <style>
+        body{
+            background-color: rgb(4, 160, 168);
+            font-size: 20px;
+        }
+        @media only screen and (max-width: 500px){
+            body{
+                background-color: lightgreen;
+                font-size: 15px;
+                flex-direction: column;
+            }
+        @media screen and (orientation: landscape) {
+            body{
+                border: 100px solid rgb(35, 172, 170);
+                min-height: 100px;
+                margin: 0px;
+            }
+            
+        }
+        }
+        .boxes{
+            display: flex;
+        }
+        .box{
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        this is media query example and resize the screen to see the effect.
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: lightcoral;
+        } */
+        /* .box::first-line{
+            color: blue;
+        } */
+        /* [data-color="primary"]{
+            margin-top: 45px;
+            background-color: aquamarine; 
+
+        }*/
+        /* .box:nth-last-child(1){
+            background-color: lightcoral; 
+         }
+        .box:nth-child(even){
+            background-color: lightblue; 
+        } */
+        /* these are pseudo elements */
+        .boxes::before{
+            content: "This is a box - ";
+            /* font-weight: bold; */
+        }
+        .boxes::after{
+            content: " - The End";
+            /* font-weight: bold; */
+        }
+        .boxes::selection{
+            background-color: yellow;
+            color: red;
+        }
+        /* also can be without the class name
+        ::selection{
+            background-color: yellow;
+            color: red;
+        } */
+        .box::first-letter{
+            /* font-size: 200%;
+            font-weight: bold; */
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary"class="box">this is a box</div>
+        <div class="box">this is another box</div>
+        <div class="box">this is a third box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+// given 5 boxes assign a random color and a random background color to each boxes using DOM manipulation and Math.random() method.

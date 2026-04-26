@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            border: 2px solid black;
+            /* gap: 10px;
+            row-gap: 20px;
+            column-gap: 30px; */
+            gap: 20px 40px; /* row-gap column-gap */
+            padding: 10px;
+            background-color: lightgray;
+            flex-direction: row; /* row, row-reverse, column, column-reverse */
+            /* justify-content: center; flex-start, flex-end, center, space-between, space-around, space-evenly */
+            align-items: center; /* flex-start, flex-end, center, stretch, baseline */
+            flex-wrap: wrap; /* nowrap, wrap, wrap-reverse */
+            align-content: baseline;
+            /* box-flex: row nowrap; it declares the flex direction and wrap in one property */
+            /* wrap is used to move the overflowing items to next line */
+        }
+        .item{
+            height: 50px;
+            background-color: teal;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .item1{
+            flex-grow: 1; /* takes all the available space */
+        }
+        .item2{
+            flex-shrink: 2; /* shrinks twice as much as others */
+        }
+        .item3{
+            flex-basis: 100px; /* initial size before growing or shrinking */
+        }
+        .item4{
+            order: 1; /* changes the order of the item */
+        }
+        .item5{
+            order: -1; /* changes the order of the item */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>       
+    </div>
+</body>
+</html>

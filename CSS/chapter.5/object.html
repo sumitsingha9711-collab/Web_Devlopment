@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css object fit and position</title>
+    <style>
+        .container{
+            height: 540px;
+            width: 700px;
+            border: 2px solid black;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-clip: border-box;
+            background-image: url('https://caribdirect.com/wp-content/uploads/2022/08/Maldives.jpg');
+        }
+        img {
+            height: 340px;
+            width: 400px;
+            /* object-fit: cover; */
+            /* object-fit: fill; */
+            /* object-fit: contain; */
+            /* object-position: bottom right; */
+            object-position: top left;
+            object-position: 65px 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://th.bing.com/th/id/R.58df31b932d49da39b2e4fd55efccb3c?rik=afiRmvS4J4rWQA&riu=http%3a%2f%2fwonderfulengineering.com%2fwp-content%2fuploads%2f2014%2f10%2fimage-wallpaper.jpg&ehk=%2fYo3AtlqfEtE198rGCOCBHKR2RLpW5m1G2i8wrLibZY%3d&risl=&pid=ImgRaw&r=0" alt=""> -->
+    </div>
+</body>
+</html>

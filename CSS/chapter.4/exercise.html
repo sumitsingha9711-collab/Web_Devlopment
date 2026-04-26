@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise</title>
+    <style>
+        :root{
+            --maincolor: teal;
+            --seccolor: coral;
+            --thirdcolor: gold;
+        }
+        ul{
+            display: flex; /* i can also use display: inline istead of flex */
+            list-style: none;
+            gap: 10px;
+            background-color: red;
+            padding: 5px;
+        }
+        li{
+            border: 2px solid black;
+            padding: 15px;
+        }
+        ul li:first-child{
+            background-color: var(--maincolor);
+        }
+        ul li:nth-child(even){
+            background-color: var(--seccolor);
+        }
+        ul li:last-child{
+            background-color: var(--thirdcolor);
+        }
+        .box{
+            display: flex;
+            background-color: aqua;
+            padding: 5px;
+        }
+        .menu{
+            padding: 5px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        .menu:first-child{
+            background-color: var(--maincolor);
+        }
+        .menu:nth-child(2){
+            background-color: var(--seccolor);
+        }
+        .menu:last-child{
+            background-color: var(--thirdcolor);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+    <div class="box">
+        <div class="menu">home</div>
+        <div class="menu">about</div>
+        <div class="menu">contact</div>
+    </div>
+</body>
+</html>

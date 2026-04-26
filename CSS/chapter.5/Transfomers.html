@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranformer in css</title>
+    <style>
+        .container{
+            height: 100vw;
+            width: 80vh;
+            border: solid black 2px ;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: teal;
+            border: solid red 2px;
+            transform: rotate(40deg);
+            /* transform: rotate(0.25turn); /* 1turn = 360deg */
+            /* transform: rotateX(45deg); rotateY, rotateZ */
+            /* transform: scale3d(1.5, 1.5, 1.5); scale, scaleX, scaleY, scaleZ */
+            /* transform: skew(10deg); skewX, skewY */
+             /* transform: translate(100px, 50px);  translateX, translateY */
+             /* translate is used to move the element from its original position */
+            /* transform: skew(45deg) translateX(100px) rotate(20deg) scale(0.05); multiple transform */
+             /* in transform, the order of functions matter and i cna use negative values eg transform: skew(-100%); is move the element to left */
+             transform-origin: 32% 32%; /* default is 50% 50% , it set the point around which the transformation is applied,*/
+            /* transform: scale(35); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

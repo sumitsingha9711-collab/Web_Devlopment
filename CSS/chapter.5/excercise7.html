@@ -1,0 +1,80 @@
+<!-- create a animation of bouncing ball in a big frame -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bouncing animation</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 70vh;
+            border: 2px solid black;
+            background-color: lightgray;
+            position: relative;
+        }
+        .ball{
+            width: 50px;
+            height:50px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: orangered;
+            position: absolute;
+            /* top: 460px; */
+            bottom: 0px;
+            left: 0px;
+            animation-name: bounce;
+            /* animation-duration: 2s; */
+            /* animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1); */
+            /* animation-iteration-count: infinite; */
+            /* animation-play-state: running; */
+            animation: animateX 2s linear infinite, animateY 1s ease-out infinite alternate;
+        }
+            
+
+        /* @keyframes bounce{
+            0%{
+                translate: 0vh 0vh;
+            }
+            15%{
+                translate: 10vh -15vh;
+            }
+            25%{
+                translate: 20vh -30vh;
+            }
+            50%{
+                translate: 30vh 1vh;
+            }
+            75%{
+                translate: 40vh -30vh;
+            }
+            100%{
+                translate: 60vh -15vh;
+            }
+        } */
+         @keyframes animateX {
+            from{
+                left:0%;
+            }
+            to{
+                left:100%;
+            }
+         }
+         @keyframes animateY{
+            from{
+                bottom: 0%;
+            }
+            to{
+                bottom: 100%;
+            }
+         }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <div class="ball">
+        </div>
+    </div>
+    
+ </body>
+ </html>

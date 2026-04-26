@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+    <style>
+        :root{
+            /* these are global changes */
+             --main-bg-color: lightblue; /* here we are defining variables */
+            --main-text-color: darkblue;
+            /* --main-padding: 10px; */
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        ul{
+            display: flex;
+        }
+        li{
+            /* text-decoration: none; */
+            list-style: none;
+            margin: 2px;
+            padding: 10px;
+        }
+        div{
+            background-color: var(--main-bg-color);
+            color: var(--main-text-color);
+            padding: 2px;
+            margin-bottom: 5px;
+        }
+        .container{
+            /* this is local changes */
+            --main-bg-color: rgb(44, 196, 132);
+            padding: var(--main-padding, 20px);
+            border: 2px solid var(--main-text-color);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>world</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, quaerat quasi? Dolores itaque voluptatum temporibus similique earum, eveniet autem ullam officia placeat quasi quis, reprehenderit nesciunt ad recusandae beatae repudiandae soluta quam voluptas aliquid? Eaque, necessitatibus ducimus voluptatem in recusandae fugiat mollitia excepturi.
+    </div>
+</body>
+</html>

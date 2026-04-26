@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        /* Element selectors */
+        h1{
+            color: brown;
+            background-color: beige;
+        }
+        /* Class slectors */
+        .one{
+            color: purple;
+            background-color: lavender;
+        }
+        /* ID selectors */
+        #para{
+            color: teal;
+            background-color: lightcyan;
+        }
+        /* child selectors */
+        div > span{
+            color: maroon;
+            background-color: mistyrose;
+        }
+        /* decendant selectors */
+        p span{
+            color: green;
+            background-color: lightgreen;
+        }
+        /* universal selector */
+        *{
+            margin: 3;
+            padding: 0;
+        }
+        /* pseudo class selector */
+        a:visited{
+            color: red;
+            
+        }
+        a:link{
+            color: orange;
+        }  
+        a:active{
+           background-color: rgb(14, 198, 14);
+        } 
+        a:hover{
+            background-color:  black;
+        }
+        p:first-child{
+            color: navy;
+            background-color: lightblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>selectors heading</h1>
+    <div class="one">this is a selectors class</div>
+    <p id="para">this is a selectors paragraph
+        <div>
+            <span> heloo this only work in div</span>
+            <p><span>heloo span in para</span>
+        </div>
+        <span>this is a selectors span</span>
+    </p>
+    <div>
+    <a href="https://www.Google.com">Google</a>
+    <a href="https://www.Facebook.com">Facebook</a>
+    <a href="https://instagram.com">Instagram</a>
+    </div>
+    <div class="two">
+        <p>i am first</p>
+        <p>i am second</p>
+    </div>
+</body>
+</html>

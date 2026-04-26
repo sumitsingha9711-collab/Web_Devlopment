@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid</title>
+    <style>
+        .container{
+            padding:10px;
+            margin: 0px;
+            height: 300px;
+            width: 700px;
+            border: 2px solid red;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                                 "side artical artical"
+                                 "footer footer footer";
+            /* grid-template-columns: 1fr 1fr 1fr; here 1fr means 1 fraction of total cloumns */
+            /* grid-template-columns: repeat(4 ,1fr); also can be used by using repeat function */
+            /* grid-template-columns: repeat(4, minmax(100px, 1fr)); for adjusting minimum width of grid */
+            /* place-content work as both justify-content and align-content */
+            /* place-content: center;  */
+            row-gap: 10px;
+            column-gap: 10px;
+            /* place-items: for both blow */
+            justify-items: center;
+            align-items: center;
+        }
+        .item{
+            padding: 0px;
+            margin: 0px;
+            height: 50px;
+            /* width: 40px; */
+            border: 2px solid rgb(19, 124, 223);
+        }
+        .item1{
+            grid-area: nav;
+            background-color: aqua;
+        }
+        .item2{
+            grid-area: side;
+            background-color: blue;
+        }
+        .item3{
+            grid-area: artical;
+            background-color: brown;
+        }
+        .item4{
+            grid-area: footer;
+            background-color: blueviolet;
+        }
+        /* this overlap with 1 */
+        /* .item5{
+            grid-area: nav;
+            background-color: thistle;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
+</body>
+</html>
